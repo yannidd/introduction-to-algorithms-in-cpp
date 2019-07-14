@@ -1,0 +1,1 @@
+void InsertionSort(int A[], int length, bool order = true);
