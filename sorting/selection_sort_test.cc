@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "sorting/insertion_sort.h"
+#include "sorting/selection_sort.h"
 #include "misc/helper.h"
 
 int main() {
@@ -9,11 +9,11 @@ int main() {
   std::cout << "Original array: " << std::endl;
   PrintArray(A, sizeof(A) / sizeof(int));
 
-  InsertionSort(A, sizeof(A) / sizeof(int));
+  SelectionSort(A, sizeof(A) / sizeof(int));
   std::cout << "Insertion sort output (ascending): " << std::endl;
   PrintArray(A, sizeof(A) / sizeof(int));
 
-  InsertionSort(A, sizeof(A) / sizeof(int), false);
+  SelectionSort(A, sizeof(A) / sizeof(int), false);
   std::cout << "Insertion sort output (descending): " << std::endl;
   PrintArray(A, sizeof(A) / sizeof(int));
 

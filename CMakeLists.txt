@@ -5,3 +5,4 @@ set(BASEPATH "${CMAKE_SOURCE_DIR}")
 include_directories("${BASEPATH}")
 
 add_subdirectory(sorting)
+add_subdirectory(misc)
