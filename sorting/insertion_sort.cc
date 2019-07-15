@@ -1,4 +1,4 @@
-#include "sorting/insertion-sort/insertion_sort.h"
+#include "sorting/insertion_sort.h"
 
 void InsertionSort(int A[], int length, bool order) {
   switch (order) {

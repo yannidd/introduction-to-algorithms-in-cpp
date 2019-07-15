@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "sorting/insertion-sort/insertion_sort.h"
+#include "sorting/insertion_sort.h"
 
 int main() {
   int A[] = {5, 2, 4, 6, 1, 3};
