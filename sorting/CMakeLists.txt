@@ -10,3 +10,11 @@ add_executable(selection-sort-test
 target_link_libraries(selection-sort-test
   helper
 )
+
+add_executable(merge-sort-test
+  merge_sort_test.cc
+  merge_sort.cc
+)
+target_link_libraries(merge-sort-test
+  helper
+)

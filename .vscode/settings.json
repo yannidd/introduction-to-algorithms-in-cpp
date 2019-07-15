@@ -42,7 +42,8 @@
     "cctype": "cpp",
     "clocale": "cpp",
     "cwctype": "cpp",
-    "string_view": "cpp"
+    "string_view": "cpp",
+    "vector": "cpp"
   },
   "cmake.debugConfig": {
     "stopAtEntry": false,
