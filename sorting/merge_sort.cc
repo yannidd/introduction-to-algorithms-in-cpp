@@ -6,8 +6,8 @@
 
 void Merge(std::vector<int> &A, int p, int q, int r, bool order) {
   // Compute lengths of 'left' and 'right' array.
-  int n1 = q - p + 1;  // 3
-  int n2 = r - q;  // 3
+  int n1 = q - p + 1;
+  int n2 = r - q;
   // + 1 because each array will have an extra sentinel.
   std::vector<int> L(n1 + 1);
   std::vector<int> R(n2 + 1);
