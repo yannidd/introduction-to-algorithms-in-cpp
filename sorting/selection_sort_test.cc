@@ -1,21 +1,22 @@
 #include <iostream>
+#include <vector>
 
 #include "sorting/selection_sort.h"
 #include "misc/helper.h"
 
 int main() {
-  int A[] = {5, 2, 4, 6, 1, 3};
+  std::vector<int> A = {5, 2, 4, 6, 1, 3};
 
   std::cout << "Original array: " << std::endl;
-  PrintArray(A, sizeof(A) / sizeof(int));
+  PrintArray(A);
 
-  SelectionSort(A, sizeof(A) / sizeof(int));
+  SelectionSort(A, true);
   std::cout << "Insertion sort output (ascending): " << std::endl;
-  PrintArray(A, sizeof(A) / sizeof(int));
+  PrintArray(A);
 
-  SelectionSort(A, sizeof(A) / sizeof(int), false);
+  SelectionSort(A, false);
   std::cout << "Insertion sort output (descending): " << std::endl;
-  PrintArray(A, sizeof(A) / sizeof(int));
+  PrintArray(A);
 
   return 0;
 }

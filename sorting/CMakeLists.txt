@@ -2,6 +2,9 @@ add_executable(insertion-sort-test
   insertion_sort_test.cc 
   insertion_sort.cc
 )
+target_link_libraries(insertion-sort-test
+  helper
+)
 
 add_executable(selection-sort-test
   selection_sort_test.cc
