@@ -10,7 +10,7 @@ include_directories("${BASEPATH}")
 # Add source to this project's executable.
 add_subdirectory(sorting)
 add_subdirectory(misc)
-add_subdirectory(test)
+add_subdirectory(tests)
 
 # TODO: Add tests and install targets if needed.
 # Download and unpack googletest at configure time

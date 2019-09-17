@@ -1,6 +1,10 @@
+#include <vector>
+
 #include "sorting/insertion_sort.h"
 
-void InsertionSort(int A[], int length, bool order) {
+void InsertionSort(std::vector<int>& A, bool order) {
+  size_t length = A.size();
+
   switch (order) {
     case true:
       for (int j = 1; j < length; j++) {

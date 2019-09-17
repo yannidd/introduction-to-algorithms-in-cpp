@@ -1,22 +1,29 @@
-add_executable(insertion-sort-test 
-  insertion_sort_test.cc 
+################################################################################
+# insertion sort
+################################################################################
+add_library(insertion_sort
   insertion_sort.cc
 )
-target_link_libraries(insertion-sort-test
+target_link_libraries(insertion_sort
   helper
 )
 
-add_library(selection-sort
+################################################################################
+# selection sort
+################################################################################
+add_library(selection_sort
   selection_sort.cc
 )
-target_link_libraries(selection-sort
+target_link_libraries(selection_sort
   helper
 )
 
-add_executable(merge-sort-test
-  merge_sort_test.cc
+################################################################################
+# merge sort
+################################################################################
+add_library(merge_sort
   merge_sort.cc
 )
-target_link_libraries(merge-sort-test
+target_link_libraries(merge_sort
   helper
 )
