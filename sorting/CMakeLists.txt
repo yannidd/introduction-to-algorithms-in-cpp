@@ -6,11 +6,10 @@ target_link_libraries(insertion-sort-test
   helper
 )
 
-add_executable(selection-sort-test
-  selection_sort_test.cc
+add_library(selection-sort
   selection_sort.cc
 )
-target_link_libraries(selection-sort-test
+target_link_libraries(selection-sort
   helper
 )
 
