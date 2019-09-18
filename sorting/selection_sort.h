@@ -2,7 +2,6 @@
 #define SORTING_SELECTION_SORT_H_
 
 #include <vector>
-#include <vector>
 #include <cmath>
 #include <limits.h>
 
