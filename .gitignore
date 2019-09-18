@@ -1,5 +1,9 @@
 # Visual Studio files.
 .vs/
 
+# Visual Studio Code files.
+.vscode/
+
 # Build output.
 out/
+build/
