@@ -1,4 +1,13 @@
 ################################################################################
+# bubble sort
+################################################################################
+add_library(bubble_sort INTERFACE
+)
+target_link_libraries(bubble_sort INTERFACE
+  helper
+)
+
+################################################################################
 # insertion sort
 ################################################################################
 add_library(insertion_sort
@@ -11,10 +20,9 @@ target_link_libraries(insertion_sort
 ################################################################################
 # selection sort
 ################################################################################
-add_library(selection_sort
-  selection_sort.cc
+add_library(selection_sort INTERFACE
 )
-target_link_libraries(selection_sort
+target_link_libraries(selection_sort INTERFACE
   helper
 )
 
