@@ -1,20 +1,16 @@
 #ifndef SORTING_SELECTION_SORT_H_
 #define SORTING_SELECTION_SORT_H_
 
-#include <vector>
-#include <cmath>
 #include <limits.h>
+#include <cmath>
+#include <vector>
 
-#include "misc/helper.h"
-
-
-template<class T>
+template <class T>
 void SelectionSort(std::vector<T> &A, bool order) {
   std::size_t length = A.size();
 
   switch (order) {
     case true:
-      
       for (size_t i = 0; i < length - 1; i++) {
         int min_idx = i;
         for (size_t j = i; j < length; j++) {
@@ -24,10 +20,8 @@ void SelectionSort(std::vector<T> &A, bool order) {
         }
         std::swap(A[i], A[min_idx]);
       }
-
       break;
     case false:
-
       for (size_t i = 0; i < length - 1; i++) {
         int max_idx = i;
         for (size_t j = i; j < length; j++) {
@@ -37,9 +31,8 @@ void SelectionSort(std::vector<T> &A, bool order) {
         }
         std::swap(A[i], A[max_idx]);
       }
-
       break;
   }
 }
 
-#endif // SORTING_SELECTION_SORT_H_
+#endif  // SORTING_SELECTION_SORT_H_
