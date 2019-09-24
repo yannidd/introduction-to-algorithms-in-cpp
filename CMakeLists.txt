@@ -8,6 +8,7 @@ set(BASEPATH "${CMAKE_SOURCE_DIR}")
 include_directories("${BASEPATH}")
 
 # Add source to this project's executable.
+add_subdirectory(searching)
 add_subdirectory(sorting)
 add_subdirectory(misc)
 add_subdirectory(tests)
