@@ -4,7 +4,6 @@ add_executable(sorting_test
 target_link_libraries(sorting_test
   insertion_sort
   merge_sort
-  selection_sort
   gtest_main
   gtest
 )
