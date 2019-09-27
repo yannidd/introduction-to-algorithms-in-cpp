@@ -1,7 +1,4 @@
-﻿# CMakeList.txt : CMake project for tmp-introduction-to-algorithms-in-cpp, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.8)
 project(algorithms)
 
 set(BASEPATH "${CMAKE_SOURCE_DIR}")
@@ -29,10 +26,11 @@ if(result)
   message(FATAL_ERROR "Build step for googletest failed: ${result}")
 endif()
 
-# Prevent overriding the parent project's compiler/linker settings on Windows
+# Prevent overriding the parent project's compiler/linker settings on Windows.
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
-# Add googletest directly to our build. This defines the gtest and gtest_main targets.
+# Add googletest directly to the build. This defines the gtest and gtest_main 
+# targets.
 add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
                  ${CMAKE_CURRENT_BINARY_DIR}/googletest-build
                  EXCLUDE_FROM_ALL)
@@ -40,4 +38,4 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 # The gtest/gtest_main targets carry header search path
 # dependencies automatically when using CMake 2.8.11 or
 # later. Otherwise we have to add them here ourselves.
-#  include_directories("${gtest_SOURCE_DIR}/include")
+# include_directories("${gtest_SOURCE_DIR}/include")
